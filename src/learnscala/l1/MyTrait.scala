@@ -9,7 +9,7 @@ class C extends A with B {
 }
 
 object LearnTrait extends App {
-  var c = new C
+  val c = new C
   c.hi
   c.hia
 }
