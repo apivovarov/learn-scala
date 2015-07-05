@@ -3,4 +3,4 @@
 .settings
 .cache-main
 target
-
+.tmpBin/*
