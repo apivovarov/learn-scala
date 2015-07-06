@@ -4,7 +4,7 @@ object FileMatcher {
 
   private def files = (new java.io.File("./src/learnscala/l1")).listFiles
 
-  def filter(m: (String) => Boolean) =
+  protected def filter(m: (String) => Boolean) =
     for (f <- files if m(f.getName)) yield f
 
   def filesEnding(query: String) = filter(name => name.endsWith(query))
